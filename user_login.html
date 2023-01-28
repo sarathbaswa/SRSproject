@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Window</title>
+	<meta name="language" content="english" />
+	<meta name="keywords" content="airprice, travel, cheap airfare, discount airfare" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://lh3.googleusercontent.com/-HtZivmahJYI/VUZKoVuFx3I/AAAAAAAAAcM/thmMtUUPjbA/Blue_square_A-3.PNG" />
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/navigate.css">
+		<link rel="stylesheet" href="css/user_login.css">
+</head>
+<body>
+	<ul class="nav-header">
+		<li class="link"><a href="index.php">Home</a></li>
+<li class="link" style="float:right"><a class="lactive" href="user_register.html">Register</a></li>
+		<li class="loggedin" style="float:right">Don't have an account?</li>
+	</ul>
+	<br> <br>
+<!-- Actual page content starts here -->
+	<div class="container" id="login">
+		<h2>Welcome to Flights and Hotels Booking</h2>
+		<form action="action_login.php" method="post">
+		<div class="container" id="login-form">
+			<h3>Username:</h3>
+			<input type="text" class="form-control" id="username" placeholder="Enter Your Username" name="username" required>
+			<h3>Password:</h3>
+			<input type="password" class="form-control" id="pwd" placeholder="Enter Your Password" name="pwd" required>
+
+		</div>
+		<br />
+		<br>
+		<br>
+		<div class="col-sm-offset-2 col-sm-8">
+			<button type="submit" class="btn btn-success btn-block" >Log In</button>
+		</div>
+		</form>
+
+	</div>
+	<br /><br />
+
+</body>
+</html>

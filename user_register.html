@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registration window</title>
+	<meta name="language" content="english" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/display_password.css">
+	<link rel="stylesheet" href="css/display_user.css">
+<link rel="stylesheet" href="css/navigate.css">
+	<script src="script/validate_pwd.js"></script>
+	<script src="script/validate_user1.js"></script>
+	<script src="script/validate_user2.js"></script>
+</head>
+<body>
+
+	<ul class="nav-header">
+		<li class="link"><a href="index.php">Home</a></li>
+	</ul>
+
+	<div class="container">
+		<div class="page-header">
+			<h2>Registration Details</h2>
+		</div>
+		<form name="registerForm" onsubmit="return validateDetails()" class="form-horizontal" role="form" action="action_register.php" method="post">
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="username"><span style="color:red;">*</span> Username:</label>
+				<div class="col-sm-6">
+					<input type="username" class="form-control" id="username" placeholder="Alpha numeric is allowed" name="username">
+				</div>
+
+				<span class="alert_error">Username required</span>
+			</div>
+
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="passwd"><span style="color:red;">*</span> Password:</label>
+				<div class="col-sm-6">
+					<input type="password" class="form-control" id="passwd"
+					placeholder="Min 6 chracters, at least one letter, one capital letter, one number" name="passwd">
+				</div>
+				<span class="alert_error">Password required</span>
+			</div>
+			<div class="form-group" id="pwd_rules">
+				<h4>Password Rules:</h4>
+				<ul>
+					<li id="number" class="invalid">At least one digit</li>
+					<li id="length" class="invalid">At least 6 characters</li>
+					<li id="letter" class="invalid">At least one alphabet</li>
+					<li id="capital" class="invalid">At least one capital letter</li>
+				</ul>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="first_name"><span style="color:red;">*</span> First Name:</label>
+				<div class="col-sm-6">
+					<input type="first_name" class="form-control" id="first_name" placeholder="Enter Your First Name" name="first_name">
+				</div>
+				<span class="alert_error">First Name required</span>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="m_name">Middle Name:</label>
+				<div class="col-sm-6">
+					<input type="m_name" class="form-control" id="m_name" name="m_name" placeholder="Enter Your Middle Name">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="l_name"><span style="color:red;">*</span> Last Name:</label>
+				<div class="col-sm-6">
+					<input type="l_name" class="form-control" id="l_name" placeholder="Enter Last Name" name="l_name">
+				</div>
+				<span class="alert_error">Last Name required</span>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="email_id"><span style="color:red;">*</span> Email Id:</label>
+				<div class="col-sm-6">
+					<input type="email_id" class="form-control" id="email_id" placeholder="for e.g. john@gmail.com" name="email_id">
+				</div>
+				<span class="alert_error">email_id required</span>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="gender_value">* Gender:</label>
+				<div class="col-sm-6">
+					<label class="radio-inline">
+						<input type="radio" name="gender_value" value="Male">Male
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="gender_value" value="Female">Female
+					</label>
+
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="dob_value">Date Of Birth:</label>
+				<div class="col-sm-6">
+					<input type="date" class="form-control" id="dob_value" name="dob_value">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="phone"><span style="color:red;">*</span> Phone:</label>
+				<div class="col-sm-6">
+					<input type="phone" class="form-control" id="phone" placeholder="eg. 01-23232324" name="phone">
+				</div>
+				<span class="alert_error">Phone Number required</span>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-6">
+					<button type="submit" class="btn btn-primary btn-block">Register Now</button>
+				</div>
+			</div>
+		</form>
+		<br /><br /><br />
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+#login {
+	width: 800px;
+	color: #fff;
+	background-color: #00BFFF;
+
+	height: 450px;
+}
+
+#login-form {
+
+	width: 700px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#login a {
+	color: #33ff00;
+}

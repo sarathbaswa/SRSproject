@@ -1,0 +1,21 @@
+
+ th  {
+	width: 50px;
+	height: 10px;
+	color: gray;
+}
+td{
+ 	color: gray;
+ }
+ .searchbar div {
+  float: left;
+  clear: none;
+  left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bighref {
+  font-size: 20px;
+}
